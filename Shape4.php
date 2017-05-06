@@ -1,6 +1,7 @@
 <?php
 
 //Filename: Shape4.php
+echo "<h1> Example 4";
 
 abstract class Shape
 {
