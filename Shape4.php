@@ -1,6 +1,6 @@
 <?php
 
-//Filename: Shape3.php
+//Filename: Shape4.php
 
 abstract class Shape
 {
@@ -48,7 +48,7 @@ class Triangle extends Rectangle
 {
     function getArea()
     {
-        return parent::getArea();
+        return parent::getArea()* .5;
     }
 }
 
@@ -67,23 +67,16 @@ function printShape($shape)
 
 }
 
-$myShape = new Circle(10);
-echo printShape($myShape);
-echo "<hr>";
+$shapes[0] = new Circle(10);
+$shapes[1] = new Circle(5);
+$shapes[2] = new Rectangle(5, 6);
+$shapes[3] = new Triangle(5, 6);
+$shapes[4] = new Square(6);
+$shapes[5] = new Rectangle(10, 6);
 
-$myShape2 = new Circle(5);
-echo printShape($myShape2);
-echo "<hr>";
 
-$myShape3 = new Rectangle(2, 3);
-echo printShape($myShape3);
-echo "<hr>";
-
-$myShape4 = new Triangle(5, 6);
-echo printShape($myShape4);
-echo "<hr>";
-
-$myShape5 = new Square(6);
-echo printShape($myShape5);
-
-?>
+foreach ($shapes as $shape){
+    echo printShape($shape);
+    echo "<hr>";
+}
+    ?>
