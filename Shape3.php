@@ -1,6 +1,6 @@
 <?php
 
-//Filename: Shape2.php
+//Filename: Shape3.php
 
 abstract class Shape
 {
@@ -60,23 +60,30 @@ class Square extends Rectangle
     }
 }
 
+function printShape($shape)
+{
+    $output = "The area for shape" . get_class($shape) . " is " . $shape->getArea();
+    return $output;
+
+}
+
 $myShape = new Circle(10);
-echo "The area for " . get_class($myShape) . " is " . $myShape->getArea();
+echo printShape($myShape);
 echo "<hr>";
 
 $myShape2 = new Circle(5);
-echo "The area for " . get_class($myShape2) . " is " . $myShape2->getArea();
+echo printShape($myShape2);
 echo "<hr>";
 
 $myShape3 = new Rectangle(2, 3);
-echo "The area for " . get_class($myShape3) . " is " . $myShape3->getArea();
+echo printShape($myShape3);
 echo "<hr>";
 
 $myShape4 = new Triangle(5, 6);
-echo "The area for " . get_class($myShape4) . " is " . $myShape4->getArea();
+echo printShape($myShape4);
 echo "<hr>";
 
 $myShape5 = new Square(6);
-echo "The area for " . get_class($myShape5) . " is " . $myShape5->getArea();
+echo printShape($myShape5);
 
 ?>
