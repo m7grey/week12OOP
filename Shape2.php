@@ -61,22 +61,22 @@ class Square extends Rectangle
 }
 
 $myShape = new Circle(10);
-echo "The area for Circle " . get_class($myShape) . "is" . $myShape->getArea();
+echo "The area for " . get_class($myShape) . " is " . $myShape->getArea();
 echo "<hr>";
 
 $myShape2 = new Circle(5);
-echo "The area for Circle " . get_class($myShape2) . "is" . $myShape2->getArea();
+echo "The area for " . get_class($myShape2) . " is " . $myShape2->getArea();
 echo "<hr>";
 
 $myShape3 = new Rectangle(2, 3);
-echo "The area for Rectangle " . get_class($myShape3) . "is" . $myShape3->getArea();
+echo "The area for " . get_class($myShape3) . " is " . $myShape3->getArea();
 echo "<hr>";
 
 $myShape4 = new Triangle(5, 6);
-echo "The area for Triangle " . get_class($myShape4) . "is" . $myShape4->getArea();
+echo "The area for " . get_class($myShape4) . " is " . $myShape4->getArea();
 echo "<hr>";
 
 $myShape5 = new Square(6);
-echo "The area for Square " . get_class($myShape5) . "is" . $myShape5->getArea();
+echo "The area for " . get_class($myShape5) . " is " . $myShape5->getArea();
 
 ?>
